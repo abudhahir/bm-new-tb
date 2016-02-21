@@ -1,6 +1,6 @@
 angular.module('navController', [])
 .controller('nav', function($scope, $state, $sce, $location) {
-	$scope.title = 'My Own Bookmark digger';
+	$scope.title = 'bookmark';
 
 
 	chrome.storage.sync.get(["showtags"], function(items){
@@ -26,7 +26,7 @@ angular.module('navController', [])
 		$scope.saveValue = 	function(){chrome.storage.sync.set({ "showtags": $scope.showtags }, function(){
 	    console.log("saved...");
 		})};
-		
+
 		$scope.highlight = function(text, search) {
 			if (!search) {
 				return $sce.trustAsHtml(text);
