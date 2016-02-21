@@ -6,6 +6,6 @@ Chrome
 ** choose directory
 
 
-Not really necessary to just use this..
+Following is not really necessary if you just want use this..
 * npm install
 * bower install
