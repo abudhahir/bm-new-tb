@@ -1,4 +1,4 @@
-* npm innstall
+* npm install
 * bower install
 
 Chrome 
