@@ -1,0 +1,17 @@
+
+                <li><a href="#" ng-click="changeStyle('cerulean')">Cerulean</a></li>
+                <li><a href="#" ng-click="changeStyle('cosmo')">Cosmo</a></li>
+                <li><a href="#" ng-click="changeStyle('cyborg')">Cyborg</a></li>
+                <li><a href="#" ng-click="changeStyle('darkly')">Darkly</a></li>
+                <li><a href="#" ng-click="changeStyle('flatly')">Flatly</a></li>
+                <li><a href="#" ng-click="changeStyle('journal')">Journal</a></li>
+                <li><a href="#" ng-click="changeStyle('lumen')">Lumen</a></li>
+                <li><a href="#" ng-click="changeStyle('paper')">Paper</a></li>
+                <li><a href="#" ng-click="changeStyle('readable')">Readable</a></li>
+                <li><a href="#" ng-click="changeStyle('sandstone')">Sandstone</a></li>
+                <li><a href="#" ng-click="changeStyle('simplex')">Simplex</a></li>
+                <li><a href="#" ng-click="changeStyle('slate')">Slate</a></li>
+                <li><a href="#" ng-click="changeStyle('spacelab')">Spacelab</a></li>
+                <li><a href="#" ng-click="changeStyle('superhero')">Superhero</a></li>
+                <li><a href="#" ng-click="changeStyle('united')">United</a></li>
+                <li><a href="#" ng-click="changeStyle('yeti')">Yeti</a></li>

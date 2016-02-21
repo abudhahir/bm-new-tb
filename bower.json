@@ -1,0 +1,32 @@
+{
+  "name": "bm-new-tab",
+  "description": "just a simple new tab page with bookmark",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "AL Abudhahir"
+  ],
+  "license": "MIT",
+  "homepage": "alad.softwarefront.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "^1.1.2"
+  },
+  "keywords": [
+    "angularjs",
+    "bootstrap",
+    "bookmark",
+    "chrome",
+    "new",
+    "tab"
+  ]
+}
