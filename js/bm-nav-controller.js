@@ -1,18 +1,14 @@
 angular.module('navController', [])
 .controller('nav', function($scope, $state, $sce, $location) {
 	$scope.title = 'My Own Bookmark digger';
-		// returns true if the current router url matches the passed in url
-		// so views can set 'active' on links easily
-/*$scope.$on('$locationChangeStart', function (event, newLoc, oldLoc){
-	$scope.searchBm = newLoc;
-   console.log('changing to: ' + newLoc);
-});
 
-$scope.$on('$locationChangeSuccess', function (event, newLoc, oldLoc){
-	$scope.searchBm = newLoc;
-   console.log('changed to: ' + newLoc);
-});
-*/
+
+	chrome.storage.sync.get(["showtags"], function(items){
+		$scope.showtags = items.showtags;
+
+	    console.log(items.showtags);
+	});
+
 
 		$scope.isUrl = function(url) {
 			if (url === '#') return false;
@@ -27,6 +23,10 @@ $scope.$on('$locationChangeSuccess', function (event, newLoc, oldLoc){
 
 		];
 
+		$scope.saveValue = 	function(){chrome.storage.sync.set({ "showtags": $scope.showtags }, function(){
+	    console.log("saved...");
+		})};
+		
 		$scope.highlight = function(text, search) {
 			if (!search) {
 				return $sce.trustAsHtml(text);

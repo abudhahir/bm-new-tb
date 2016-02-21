@@ -32,16 +32,9 @@
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="#">Abu's Bookmark Manager</a>
           </div>
-
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+          <div>
             <form class="navbar-form navbar-right" role="search">
               <span class="badge">{{filteredBms.length}}</span>
               <div class="form-group">
@@ -49,7 +42,7 @@
               </div>
               <div class="form-group">
                 <label>
-                  <input type="checkbox" ng-model="showtags" > Show Tags
+                  <input type="checkbox" ng-click="saveValue()" ng-model="showtags" > Show Tags
                 </label>
               </div>
             </form>
